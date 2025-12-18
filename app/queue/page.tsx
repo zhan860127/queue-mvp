@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { createClient } from "@supabase/supabase-js"
+import Head from "next/head"
 
 const supabaseUrl = "https://zajfuusemjpbuxtjpbpn.supabase.co"
 const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InphamZ1dXNlbWpwYnV4dGpwYnBuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjU5MzAxMzAsImV4cCI6MjA4MTUwNjEzMH0.R4kSsGVzI_dWgzotlK33MT-7pLjIvuMh9OGV8jORsxw"
@@ -58,6 +59,10 @@ export default function Page() {
   return (
     <>
       <main className="page">
+        <Head>
+        <title>我的首頁</title>
+        <meta name="description" content="這是首頁描述" />
+        </Head>
         <div className="logoWrap">
           <img src="/logo.jpg" alt="清嶼 Tranquil Island" className="logo" />
         </div>
@@ -152,8 +157,8 @@ export default function Page() {
           width: 100%;
           padding: 14px 0;
           font-size: 18px;
-          background: #cbb69d;
-          color: #2b2b2b;
+          background: #a7be8c;
+          color: #ffffffff;
           border: none;
           border-radius: 999px;
           cursor: pointer;
